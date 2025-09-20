@@ -79,6 +79,10 @@ section {
 }
 
 /* Socials */
+#socials {
+  margin-top: 50px;   /* separa de los skills */
+}
+
 .social-icons {
   display: flex;
   flex-wrap: wrap;
