@@ -128,3 +128,18 @@ footer {
   margin-top: 40px;
   clear: both;
 }
+/* --- botones para profesiones --- */
+.profession-link {
+  text-decoration: none;
+  color: #fff;              /* mismo color que el texto del header */
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.profession-link:hover {
+  background: #fff;
+  color: #333;
+}
