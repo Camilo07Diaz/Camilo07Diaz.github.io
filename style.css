@@ -131,7 +131,7 @@ footer {
 /* --- botones para profesiones --- */
 .profession-link {
   text-decoration: none;
-  color: #fff;              /* blanco siempre */
+  color: #fff !important;   /* forzamos blanco */
   font-weight: bold;
   padding: 6px 12px;
   border: 1px solid #fff;
@@ -141,5 +141,5 @@ footer {
 
 .profession-link:hover {
   background: #fff;
-  color: #222;              /* cuando pasas el mouse, el texto se oscurece */
+  color: #222 !important;   /* texto oscuro al hacer hover */
 }
