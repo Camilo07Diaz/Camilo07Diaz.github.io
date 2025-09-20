@@ -31,7 +31,7 @@ section {
 }
 
 /* Skills */
-skills-logos {
+.skills-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -41,11 +41,11 @@ skills-logos {
 
 .skill {
   text-align: center;
-  width: 100px;  /* ancho fijo para alinear imágenes y texto */
+  width: 100px; /* ancho fijo para alinear imágenes y texto */
 }
 
 .skill img {
-  width: 60px;   /* tamaño uniforme de los logos */
+  width: 60px; /* tamaño uniforme de los logos */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -58,14 +58,28 @@ skills-logos {
 }
 
 /* Socials */
+.social-links {
+  margin-top: 20px;
+}
 .social-links a {
   margin: 0 10px;
-  font-size: 24px;
+  font-size: 28px;
   color: #333;
   transition: 0.3s;
 }
 .social-links a:hover {
-  color: #0077b5; /* LinkedIn blue as default hover */
+  color: #0077b5; /* LinkedIn blue como default */
+}
+
+/* Hover específico por red */
+.social-links a.linkedin:hover {
+  color: #0077b5;
+}
+.social-links a.github:hover {
+  color: #000;
+}
+.social-links a.twitter:hover {
+  color: #1DA1F2;
 }
 
 /* Footer */
