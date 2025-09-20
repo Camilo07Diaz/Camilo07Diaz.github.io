@@ -31,32 +31,30 @@ section {
 }
 
 /* Skills */
-.skills {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.skills h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.skills-logos {
+skills-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
+  margin-top: 20px;
 }
 
-.skills-logos img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  transition: transform 0.3s;
+.skill {
+  text-align: center;
+  width: 100px;  /* ancho fijo para alinear imágenes y texto */
 }
 
-.skills-logos img:hover {
-  transform: scale(1.2);
+.skill img {
+  width: 60px;   /* tamaño uniforme de los logos */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.skill p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /* Socials */
