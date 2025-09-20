@@ -40,7 +40,7 @@ section {
 }
 
 /* Skills */
-.skills-logos {
+.skills-logos {   /* <-- corregido con el punto */
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* centra horizontal */
@@ -51,7 +51,7 @@ section {
 
 .skill {
   text-align: center;
-  width: 100px; /* ancho fijo para alinear imágenes y texto */
+  width: 100px;  /* ancho fijo para alinear imágenes y texto */
 }
 
 .skill img {
