@@ -131,15 +131,15 @@ footer {
 /* --- botones para profesiones --- */
 .profession-link {
   text-decoration: none;
-  color: #fff;              /* mismo color que el texto del header */
+  color: #fff;              /* blanco siempre */
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border: 1px solid #fff;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: background 0.3s, color 0.3s;
 }
 
 .profession-link:hover {
   background: #fff;
-  color: #333;
+  color: #222;              /* cuando pasas el mouse, el texto se oscurece */
 }
