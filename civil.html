@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Civil Engineer - Camilo Diaz</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="civil-page">
 
-  <!-- Encabezado -->
-  <section class="header">
-    <h1>Civil Engineer</h1>
-    <p class="skills">
-      Cost estimation | Project Scheduling | Project Coordination | 
-      MS Office | MS Project | AutoCAD | Revit
-    </p>
-  </section>
-
-  <!-- Experiencia -->
-  <section class="experience">
+  <!-- Header -->
+  <header class="civil-header">
     <div class="container">
-      <p><strong>With over 5 years of experience in the construction industry</strong>, 
-      I have developed a versatile background across multiple administrative and technical aspects of project management. 
-      My expertise includes:</p>
+      <h1>Civil Engineer</h1>
+      <p>Cost Estimation | Project Scheduling | Project Coordination | MS Office | MS Project | AutoCAD | Revit</p>
+      <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+  </header>
 
+  <!-- Experience -->
+  <section class="civil-experience">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <p><strong>With over 5 years of experience in the construction industry</strong>, I have developed a versatile background across multiple administrative and technical aspects of project management. My expertise includes:</p>
       <ul>
         <li>Coordination of design and consulting projects</li>
         <li>Supervision and coordination of construction projects</li>
@@ -33,52 +32,76 @@
         <li>Coordination of multidisciplinary teams for project design</li>
       </ul>
 
-      <p><strong>Career highlights:</strong></p>
+      <h3>Career Highlights:</h3>
       <ul>
         <li>Participation in 4 construction projects</li>
         <li>Coordination of 6 construction supervision projects</li>
         <li>Involvement in 10 project designs for construction</li>
         <li>Contribution to more than 20 cost estimation and scheduling processes</li>
+        <li>Overall, I have contributed to projects totaling <strong>over 20,000 square meters of construction</strong></li>
       </ul>
-
-      <p><strong>Overall, I have contributed to projects totaling over 20,000 square meters of construction.</strong></p>
     </div>
   </section>
 
-  <!-- Logos -->
-  <section class="tools">
-    <img src="img/autocad.png" alt="AutoCAD">
-    <img src="img/excel.png" alt="Excel">
-    <img src="img/project.png" alt="MS Project">
-    <img src="img/revit.png" alt="Revit">
+  <!-- Chart -->
+  <section class="civil-chart">
+    <div class="container">
+      <h2>Projects Participation</h2>
+      <canvas id="projectsChart"></canvas>
+    </div>
   </section>
 
-  <!-- Gráfica -->
-  <section class="chart">
-    <h2>Projects participation</h2>
-    <canvas id="projectsChart"></canvas>
+  <!-- Tools -->
+  <section class="civil-tools">
+    <div class="container">
+      <h2>Tools I Use</h2>
+      <div class="skills-logos">
+        <div class="skill">
+          <img src="autocad.png" alt="AutoCAD">
+          <p>AutoCAD</p>
+        </div>
+        <div class="skill">
+          <img src="excel.png" alt="Excel">
+          <p>Excel</p>
+        </div>
+        <div class="skill">
+          <img src="msproject.png" alt="MS Project">
+          <p>MS Project</p>
+        </div>
+        <div class="skill">
+          <img src="revit.png" alt="Revit">
+          <p>Revit</p>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Camilo Diaz. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Chart Script -->
   <script>
     const ctx = document.getElementById('projectsChart').getContext('2d');
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Design projects', 'Supervising projects', 'Construction projects'],
+        labels: ['Design Projects', 'Supervising Projects', 'Construction Projects'],
         datasets: [{
+          label: 'Number of Projects',
           data: [10, 6, 4],
-          backgroundColor: ['#1f77b4', '#1f77b4', '#1f77b4']
+          backgroundColor: '#1abc9c'
         }]
       },
       options: {
         indexAxis: 'y',
         responsive: true,
         plugins: {
-          legend: { display: false },
-          tooltip: { enabled: true }
+          legend: { display: false }
         },
         scales: {
-          x: { beginAtZero: true, max: 15 }
+          x: { beginAtZero: true, max: 12 }
         }
       }
     });
