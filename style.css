@@ -142,53 +142,90 @@ footer {
 
 /* --- civil page --- */
 body.civil-page {
+  background-color: #111;
+  color: #f5f5f5;
   font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
-  margin: 0;
-  padding: 0;
 }
 
-.header {
+.civil-header {
+  background-color: #000;
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 30px 20px;
 }
 
-.header h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+.civil-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 
-.header .skills {
-  font-size: 16px;
+.civil-header p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
   color: #ccc;
 }
 
-.experience {
-  background: white;
-  color: black;
-  padding: 30px;
+.back-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #1abc9c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }
 
-.experience .container {
+.back-btn:hover {
+  background-color: #16a085;
+}
+
+.civil-experience {
+  padding: 2rem 1rem;
   max-width: 900px;
+  margin: auto;
+  color: #ddd;
+}
+
+.civil-experience h2, 
+.civil-experience h3 {
+  color: #fff;
+}
+
+.civil-chart {
+  padding: 2rem 1rem;
+  max-width: 600px;
   margin: auto;
 }
 
-.tools {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.tools img {
-  width: 60px;
-  margin: 0 15px;
-}
-
-.chart {
-  padding: 40px;
+.civil-tools {
+  padding: 2rem 1rem;
   text-align: center;
 }
-.chart h2 {
-  margin-bottom: 20px;
+
+.civil-tools h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.civil-tools .skills-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.civil-tools .skill {
+  text-align: center;
+}
+
+.civil-tools .skill img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.civil-tools .skill p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #fff;
 }
