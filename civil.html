@@ -5,23 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Civil Engineer - Camilo Diaz</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Civil Engineer</h1>
-      <p><a href="index.html">← Back to Home</a></p>
-    </div>
-  </header>
+<body class="civil-page">
 
-  <section>
+  <!-- Encabezado -->
+  <section class="header">
+    <h1>Civil Engineer</h1>
+    <p class="skills">
+      Cost estimation | Project Scheduling | Project Coordination | 
+      MS Office | MS Project | AutoCAD | Revit
+    </p>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="experience">
     <div class="container">
-      <h2>My Experience as Civil Engineer</h2>
-      <p>
-        Aquí describes tus proyectos, experiencia en estimación de costos, planificación de obras,
-        manejo de recursos, software de ingeniería (AutoCAD, Excel avanzado, Project, etc).
-      </p>
+      <p><strong>With over 5 years of experience in the construction industry</strong>, 
+      I have developed a versatile background across multiple administrative and technical aspects of project management. 
+      My expertise includes:</p>
+
+      <ul>
+        <li>Coordination of design and consulting projects</li>
+        <li>Supervision and coordination of construction projects</li>
+        <li>On-site supervision during project execution</li>
+        <li>Cost estimation for projects in the design stage</li>
+        <li>Coordination of multidisciplinary teams for project design</li>
+      </ul>
+
+      <p><strong>Career highlights:</strong></p>
+      <ul>
+        <li>Participation in 4 construction projects</li>
+        <li>Coordination of 6 construction supervision projects</li>
+        <li>Involvement in 10 project designs for construction</li>
+        <li>Contribution to more than 20 cost estimation and scheduling processes</li>
+      </ul>
+
+      <p><strong>Overall, I have contributed to projects totaling over 20,000 square meters of construction.</strong></p>
     </div>
   </section>
+
+  <!-- Logos -->
+  <section class="tools">
+    <img src="img/autocad.png" alt="AutoCAD">
+    <img src="img/excel.png" alt="Excel">
+    <img src="img/project.png" alt="MS Project">
+    <img src="img/revit.png" alt="Revit">
+  </section>
+
+  <!-- Gráfica -->
+  <section class="chart">
+    <h2>Projects participation</h2>
+    <canvas id="projectsChart"></canvas>
+  </section>
+
+  <script>
+    const ctx = document.getElementById('projectsChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Design projects', 'Supervising projects', 'Construction projects'],
+        datasets: [{
+          data: [10, 6, 4],
+          backgroundColor: ['#1f77b4', '#1f77b4', '#1f77b4']
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: { enabled: true }
+        },
+        scales: {
+          x: { beginAtZero: true, max: 15 }
+        }
+      }
+    });
+  </script>
+
 </body>
 </html>
