@@ -139,3 +139,56 @@ footer {
 .profession-link:hover {
   color: #f4d03f !important;   /* un amarillo dorado al pasar el mouse */
 }
+
+/* --- civil page --- */
+body.civil-page {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.header .skills {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.experience {
+  background: white;
+  color: black;
+  padding: 30px;
+}
+
+.experience .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.tools {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.tools img {
+  width: 60px;
+  margin: 0 15px;
+}
+
+.chart {
+  padding: 40px;
+  text-align: center;
+}
+.chart h2 {
+  margin-bottom: 20px;
+}
