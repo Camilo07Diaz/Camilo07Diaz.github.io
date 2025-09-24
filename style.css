@@ -142,15 +142,16 @@ footer {
 
 /* --- civil page --- */
 body.civil-page {
-  background-color: #111;
-  color: #f5f5f5;
+  background-color: #fff; /* Fondo blanco para todo */
+  color: #111; /* Texto oscuro */
   font-family: Arial, sans-serif;
 }
 
 .civil-header {
-  background-color: #000;
+  background-color: #000; /* Header negro */
   padding: 2rem 1rem;
   text-align: center;
+  color: #fff;
 }
 
 .civil-header h1 {
@@ -165,45 +166,26 @@ body.civil-page {
   color: #ccc;
 }
 
-.back-btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #1abc9c;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 0.9rem;
-}
-
-.back-btn:hover {
-  background-color: #16a085;
-}
-
 .civil-experience {
   padding: 2rem 1rem;
   max-width: 900px;
   margin: auto;
-  color: #ddd;
+  color: #111; /* Texto negro */
+  background: #fff;
 }
 
-.civil-experience h2, 
-.civil-experience h3 {
-  color: #fff;
-}
-
-.civil-chart {
-  padding: 2rem 1rem;
-  max-width: 600px;
-  margin: auto;
+.civil-experience h2 {
+  color: #000; /* Títulos oscuros */
 }
 
 .civil-tools {
   padding: 2rem 1rem;
   text-align: center;
+  background: #fff;
 }
 
 .civil-tools h2 {
-  color: #fff;
+  color: #000;
   margin-bottom: 1rem;
 }
 
@@ -227,7 +209,7 @@ body.civil-page {
 .civil-tools .skill p {
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #fff;
+  color: #000;
 }
 
 /* --- data page --- */
