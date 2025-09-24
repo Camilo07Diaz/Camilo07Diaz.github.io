@@ -229,3 +229,72 @@ body.civil-page {
   font-size: 0.9rem;
   color: #fff;
 }
+
+/* --- data page --- */
+body.data-page {
+  background-color: #111;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.data-header {
+  background-color: #000;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.data-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.data-header p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.data-experience {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+  color: #ddd;
+}
+
+.data-experience h2 {
+  color: #fff;
+}
+
+.data-tools {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.data-tools h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.data-tools .skills-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.data-tools .skill {
+  text-align: center;
+}
+
+.data-tools .skill img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.data-tools .skill p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
