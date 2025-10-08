@@ -5,15 +5,53 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Camilo Diaz — English</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    .back-btn {
+      display: inline-block;
+      margin-right: auto;
+      background-color: #555;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      font-weight: 500;
+      padding: 6px 14px;
+    }
+
+    .back-btn:hover {
+      background-color: #777;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      background-color: #000;
+      padding: 30px 20px;
+    }
+
+    .back-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  </style>
 </head>
 <body>
-    <a href="../index.html" class="back-btn">← Back</a>
   <header class="site-header">
     <div class="container header-inner">
+      <div class="back-container">
+        <a href="../index.html" class="back-btn">← Back</a>
+      </div>
+
       <img src="../your-profile.jpeg" alt="Camilo Diaz" class="profile-pic">
       <div class="header-text">
         <h1 class="site-name">Camilo Diaz</h1>
-        <p class="professions"><span class="prof-bold">Data Analyst</span> | <span class="prof-bold">Civil Engineer</span></p>
+        <p class="professions">
+          <span class="prof-bold">Data Analyst</span> | 
+          <span class="prof-bold">Civil Engineer</span>
+        </p>
       </div>
     </div>
   </header>
@@ -30,6 +68,10 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container"><p>© 2025 Camilo Diaz</p></div></footer>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Camilo Diaz</p>
+    </div>
+  </footer>
 </body>
 </html>
