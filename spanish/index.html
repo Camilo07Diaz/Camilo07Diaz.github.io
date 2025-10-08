@@ -1,25 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Camilo Díaz — Español</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Camilo Diaz — Español</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Fondo uniforme negro */
+    .site-header {
+      background-color: #000;
+      color: #fff;
+      padding: 40px 20px 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Botón Volver gris */
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #555;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #777;
+    }
+
+    /* Imagen más grande y centrada */
+    .profile-pic {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .site-name {
+      font-size: 2.2em;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .professions {
+      font-size: 1em;
+      font-weight: 500;
+    }
+
+    /* Contenido principal */
+    .main-content {
+      max-width: 700px;
+      margin: 50px auto;
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <img src="../your-profile.jpeg" alt="Camilo Diaz" class="profile-pic">
-      <div class="header-text">
-        <h1 class="site-name">Camilo Diaz</h1>
-        <p class="professions"><span class="prof-bold">Analista de Datos</span> | <span class="prof-bold">Ingeniero Civil</span></p>
-      </div>
-    </div>
+    <a href="../index.html" class="back-btn">← Volver</a>
+    <img src="../your-profile.jpeg" alt="Camilo Diaz" class="profile-pic">
+    <h1 class="site-name">Camilo Diaz</h1>
+    <p class="professions"><span class="prof-bold">Analista de Datos</span> | <span class="prof-bold">Ingeniero Civil</span></p>
   </header>
 
   <main class="container main-content">
-    <section id="sobre-mi">
+    <section id="about">
       <h2>Sobre mí</h2>
-      <p>Aquí pega tu texto en español...</p>
+      <p>Comencé mi carrera como ingeniero civil... (aquí pega tu texto en español)</p>
 
       <div style="margin-top:22px;">
         <a class="btn primary" href="data.html">Analista de Datos</a>
@@ -28,6 +81,10 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container"><p>© 2025 Camilo Diaz</p></div></footer>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Camilo Diaz</p>
+    </div>
+  </footer>
 </body>
 </html>
