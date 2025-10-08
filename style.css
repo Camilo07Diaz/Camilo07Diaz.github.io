@@ -1,367 +1,54 @@
-/* General reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+/* --- base --- */
+*{box-sizing:border-box}
+body{
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  margin:0;
+  color:#222;
+  background:#fff;
+  line-height:1.5;
 }
+.container{width:90%;max-width:1100px;margin:0 auto}
 
-.container {
-  width: 85%;
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+/* header: area negra superior */
+.site-header{
+  background:#222;
+  color:#fff;
+  padding:34px 0 18px;
 }
+.header-inner{display:flex;flex-direction:column;align-items:center;gap:12px}
+@media(min-width:800px){ .header-inner{flex-direction:row;align-items:center} }
 
-/* Header */
-header {
-  background: #222;
-  color: #fff;
-  padding: 30px 0;
-  text-align: center;
+.profile-pic{
+  width:140px;height:140px;border-radius:50%;object-fit:cover;border:6px solid rgba(255,255,255,.08)
 }
-.header-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+.header-text{text-align:center}
+@media(min-width:800px){ .header-text{text-align:left;margin-left:18px} }
 
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-header h1 {
-  font-size: 2.5em;
-}
+.site-name{font-size:2.8rem;margin:0;color:#fff}
+.professions{margin:6px 0 0;color:#e6e6e6}
+.prof-bold{font-weight:700;color:#fff}
 
-header p.profession {
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-top: 10px;
-}
+/* main content spacing */
+.main-content{padding:40px 0}
 
-/* Sections */
-section {
-  padding: 40px 0;
-}
+/* language buttons */
+.lang-select{text-align:center;margin-bottom:28px}
+.lang-buttons{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+.btn.primary{background:#fff;color:#007acc;border:2px solid #fff}
+.btn.primary:hover{background:#f0f0f0}
 
-.container h2 {
-  margin-bottom: 20px;
-  text-align: left; /* alineación izquierda */
-}
+/* skills grid */
+.skills{margin:40px 0}
+.skills-logos{display:flex;flex-wrap:wrap;gap:28px;justify-content:center}
+.skill{width:110px;text-align:center}
+.skill img{width:64px;height:64px;object-fit:contain;display:block;margin:0 auto 8px}
+.skill p{margin:0;font-size:13px;font-weight:600;color:#222}
 
-/* About */
-#about p {
-  font-size: 1.1em;
-  text-align: justify;
-}
+/* connect */
+.connect{margin:40px 0;text-align:center}
+.social-links a{display:inline-block;margin:6px 10px;color:#222;text-decoration:none;font-weight:600}
+.social-links a img{vertical-align:middle;width:20px;height:20px;margin-right:6px}
 
-/* Skills */
-.skills-logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-start;
-}
-
-.skill {
-  text-align: center;
-  width: 100px;
-}
-
-.skill img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-}
-
-.skill p {
-  margin-top: 10px;
-  font-size: 0.9em;
-  font-weight: 700; /* negrilla para skills */
-}
-
-/* Socials */
-#socials {
-  margin-top: 50px;   /* separa de los skills */
-}
-
-.social-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-start;
-}
-
-.social-icons a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #333;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.social-icons a:hover {
-  text-decoration: underline;
-}
-
-.social-icons img {
-  width: 24px;
-  height: 24px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background: #111;
-  color: #fff;
-  padding: 15px 0;
-  margin-top: 40px;
-  clear: both;
-}
-/* --- botones para profesiones --- */
-.profession-link {
-  text-decoration: none;
-  color: #fff !important;   /* ahora sí se verán blancos */
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.profession-link:hover {
-  color: #f4d03f !important;   /* un amarillo dorado al pasar el mouse */
-}
-
-/* --- civil page --- */
-body.civil-page {
-  background-color: #fff; /* Fondo blanco para todo */
-  color: #111; /* Texto oscuro */
-  font-family: Arial, sans-serif;
-}
-
-.civil-header {
-  background-color: #000; /* Header negro */
-  padding: 2rem 1rem;
-  text-align: center;
-  color: #fff;
-}
-
-.civil-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #fff;
-}
-
-.civil-header p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #ccc;
-}
-
-.civil-experience {
-  padding: 2rem 1rem;
-  max-width: 900px;
-  margin: auto;
-  color: #111; /* Texto negro */
-  background: #fff;
-}
-
-.civil-experience h2 {
-  color: #000; /* Títulos oscuros */
-}
-
-.civil-tools {
-  padding: 2rem 1rem;
-  text-align: center;
-  background: #fff;
-}
-
-.civil-tools h2 {
-  color: #000;
-  margin-bottom: 1rem;
-}
-
-.civil-tools .skills-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.civil-tools .skill {
-  text-align: center;
-}
-
-.civil-tools .skill img {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-}
-
-.civil-tools .skill p {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #000;
-}
-
-.civil-cv {
-  padding: 2rem 1rem;
-  text-align: center;
-  background: #fff;
-  color: #111;
-}
-
-.civil-cv h2 {
-  color: #000;
-  margin-bottom: 1rem;
-}
-
-.civil-cv p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-.cv-button {
-  display: inline-block;
-  padding: 0.7rem 1.5rem;
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.cv-button:hover {
-  background: #444;
-}
-
-/* --- data page --- */
-body.data-page {
-  background-color: #fff; /* Fondo blanco para todo */
-  color: #111; /* Texto oscuro */
-  font-family: Arial, sans-serif;
-}
-
-.data-header {
-  background-color: #000; /* Header negro */
-  padding: 2rem 1rem;
-  text-align: center;
-  color: #fff;
-}
-
-.data-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #fff;
-}
-
-.data-header p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #ccc;
-}
-
-.data-experience {
-  padding: 2rem 1rem;
-  max-width: 900px;
-  margin: auto;
-  color: #111; /* Texto negro */
-  background: #fff;
-}
-
-.data-experience h2 {
-  color: #000; /* Títulos oscuros */
-}
-
-.data-tools {
-  padding: 2rem 1rem;
-  text-align: center;
-  background: #fff;
-}
-
-.data-tools h2 {
-  color: #000;
-  margin-bottom: 1rem;
-}
-
-.data-tools .skills-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.data-tools .skill {
-  text-align: center;
-}
-
-.data-tools .skill img {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-}
-
-.data-tools .skill p {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #000;
-}
-
-.data-projects {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: auto;
-  background: #fff;
-}
-
-.data-projects h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #000;
-}
-
-.data-projects canvas {
-  display: block;
-  margin: auto;
-  max-width: 600px;
-}
-
-/* CV Section for Data Analyst */
-.data-cv {
-  padding: 2rem 1rem;
-  text-align: center;
-  background: #fff;
-  color: #111;
-}
-
-.data-cv h2 {
-  color: #000;
-  margin-bottom: 1rem;
-}
-
-.data-cv p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-.data-cv .cv-button {
-  display: inline-block;
-  padding: 0.7rem 1.5rem;
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.data-cv .cv-button:hover {
-  background: #444;
-}
+/* footer */
+.site-footer{background:#111;color:#fff;padding:18px 0;margin-top:40px;text-align:center}
