@@ -1,73 +1,115 @@
-/* --- base --- */
-*{box-sizing:border-box}
-body{
-  font-family: Arial, sans-serif;
-  margin:0;
-  color:#222;
-  background:#fff;
-  line-height:1.5;
+/* === RESET === */
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
 }
-.container{width:90%;max-width:1100px;margin:0 auto}
 
-/* header: area negra superior */
-.site-header{
-  background:#222;
-  color:#fff;
-  padding:34px 0 18px;
+/* === CONTAINER === */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
-.header-inner{display:flex;flex-direction:column;align-items:center;gap:12px}
-@media(min-width:800px){ .header-inner{flex-direction:row;align-items:center} }
 
-.profile-pic {
-  width: 230px;      /* Aumenta el tamaño */
-  height: 230px;     /* Mantiene proporción cuadrada */
-  border-radius: 50%; /* Mantiene la forma circular */
-  object-fit: cover;  /* Asegura que no se deforme */
-  margin-top: 1rem;   /* Pequeño espacio arriba */
-}
-.header-text{text-align:center}
-@media(min-width:800px){ .header-text{text-align:left;margin-left:18px} }
-
-.site-name{font-size:2.8rem;margin:0;color:#fff}
-.professions{margin:6px 0 0;color:#e6e6e6}
-.prof-bold{font-weight:700;color:#fff}
-
-/* main content spacing */
-.main-content{padding:40px 0}
-
-/* language buttons */
-.lang-select{text-align:center;margin-bottom:28px}
-.lang-buttons{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:14px}
-.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700}
-.btn.primary{background:#fff;color:#007acc;border:2px solid #fff}
-.btn.primary:hover{background:#f0f0f0}
-
-/* skills grid */
-.skills{margin:40px 0}
-.skills-logos{display:flex;flex-wrap:wrap;gap:28px;justify-content:center}
-.skill{width:110px;text-align:center}
-.skill img{width:64px;height:64px;object-fit:contain;display:block;margin:0 auto 8px}
-.skill p{margin:0;font-size:13px;font-weight:600;color:#222}
-
-/* connect */
-.connect{margin:40px 0;text-align:center}
-.social-links a{display:inline-block;margin:6px 10px;color:#222;text-decoration:none;font-weight:600}
-.social-links a img{vertical-align:middle;width:20px;height:20px;margin-right:6px}
-
-/* footer */
-.site-footer{background:#111;color:#fff;padding:18px 0;margin-top:40px;text-align:center}
-
+/* === BOTÓN DE REGRESO === */
 .back-btn {
   display: inline-block;
-  margin: 20px;
-  padding: 8px 16px;
-  background-color: #000;
-  color: #fff;
+  margin: 1.5rem 0;
   text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s;
+  color: #333;
+  background-color: #f1f1f1;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.back-btn:hover {
+  background-color: #ddd;
 }
 
-.back-btn:hover {
-  background-color: #333;
+/* === HEADER PRINCIPAL === */
+.profile-header {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.profile-pic-large {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #222;
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.profile-profession {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* === SECCIÓN PROFESIONES === */
+.professions-section {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.profession-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn.primary {
+  text-decoration: none;
+  background-color: #0077ff;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.btn.primary:hover {
+  background-color: #005fcb;
+}
+
+/* === ABOUT ME === */
+.about {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.7;
+  color: #333;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+/* === FOOTER === */
+.site-footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 4px solid #0077ff;
 }
