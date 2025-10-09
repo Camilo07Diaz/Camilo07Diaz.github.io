@@ -18,8 +18,12 @@ body{
 .header-inner{display:flex;flex-direction:column;align-items:center;gap:12px}
 @media(min-width:800px){ .header-inner{flex-direction:row;align-items:center} }
 
-.profile-pic{
-  width:140px;height:140px;border-radius:50%;object-fit:cover;border:6px solid rgba(255,255,255,.08)
+.profile-pic {
+  width: 230px;      /* Aumenta el tamaño */
+  height: 230px;     /* Mantiene proporción cuadrada */
+  border-radius: 50%; /* Mantiene la forma circular */
+  object-fit: cover;  /* Asegura que no se deforme */
+  margin-top: 1rem;   /* Pequeño espacio arriba */
 }
 .header-text{text-align:center}
 @media(min-width:800px){ .header-text{text-align:left;margin-left:18px} }
