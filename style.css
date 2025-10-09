@@ -74,3 +74,12 @@ body{
   color: #fff;
   transform: scale(1.05);
 }
+
+/* Reducir espacio entre profesiones y About Me */
+#professions {
+  margin-bottom: 10px; /* antes el navegador aplicaba un margen mayor */
+}
+
+#about {
+  margin-top: 10px; /* reduce el espacio superior */
+}
