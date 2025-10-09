@@ -143,3 +143,23 @@ body {
 .back-btn:hover {
   background: #ddd;
 }
+/* --- FIX GLOBAL --- */
+
+/* Restaura tamaño de todas las imágenes */
+img {
+  max-width: none;
+  height: auto;
+}
+
+/* Línea oscura del encabezado */
+header {
+  border-bottom: 3px solid #111;
+}
+
+/* Ajuste específico para imágenes del Tech Stack */
+.tech-stack img {
+  max-width: 90px;
+  height: auto;
+  margin: 10px;
+  object-fit: contain;
+}
