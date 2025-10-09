@@ -56,3 +56,21 @@ body{
 
 /* footer */
 .site-footer{background:#111;color:#fff;padding:18px 0;margin-top:40px;text-align:center}
+
+.back-btn {
+  display: inline-block;
+  margin: 1rem 0 0 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #1abc9c;
+  color: #fff;
+  transform: scale(1.05);
+}
