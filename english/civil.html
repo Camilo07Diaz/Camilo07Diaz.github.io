@@ -52,30 +52,27 @@ Throughout my career, I successfully coordinated multidisciplinary teams, optimi
   <canvas id="projectsChart" width="600" height="300"></canvas>
 </section>
      <!-- Chart Script -->
-  <script>
-    const ctx = document.getElementById('projectsChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['Design Projects', 'Supervising Projects', 'Construction Projects'],
-        datasets: [{
-          label: 'Number of Projects',
-          data: [15, 9, 12],
-          backgroundColor: '#1abc9c'
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        plugins: {
-          legend: { display: false }
-        },
-        scales: {
-          x: { beginAtZero: true, max: 15 }
-        }
-      }
-    });
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('projectsChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Design Projects', 'Supervising Projects', 'Construction Projects'],
+      datasets: [{
+        label: 'Number of Projects',
+        data: [15, 9, 12],
+        backgroundColor: ['#4a5568', '#718096', '#a0aec0'] // tonos sobrios
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: { x: { beginAtZero: true, max: 15 } }
+    }
+  });
+</script>
 
     <section class="connect">
       <h2>Connect with Me</h2>
