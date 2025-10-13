@@ -206,3 +206,17 @@ canvas {
   display: block;
   margin: 30px auto;
 }
+/* === Ajuste de espacios en index .html  === */
+.main-content {
+  max-width: 700px;
+  margin: 30px auto; /* reduce el espacio vertical */
+  text-align: left;
+}
+
+#professions {
+  margin-bottom: 10px; /* reduce el espacio entre secciones */
+}
+
+#about {
+  margin-top: 0; /* elimina margen superior adicional */
+}
