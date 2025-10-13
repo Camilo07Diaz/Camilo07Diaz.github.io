@@ -163,3 +163,32 @@ body{
 .back-btn:hover {
   background: #555;
 }
+
+/* === Contenedor del gráfico === */
+#projectsChart {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* === Fondo general y tipografía sobria === */
+body {
+  background-color: #f3f4f6; /* gris claro */
+  color: #333;
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+/* === Leyenda y etiquetas de Chart.js === */
+.chartjs-render-monitor {
+  color: #444 !important;
+  font-size: 14px;
+}
+
+/* === Ajustes del canvas === */
+canvas {
+  display: block;
+  margin: 0 auto;
+}
