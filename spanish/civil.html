@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Civil Engineer — Camilo Diaz</title>
+  <title>Ingeniero Civil — Camilo Diaz</title>
   <link rel="stylesheet" href="../style.css"/>
 </head>
 <body>
@@ -10,8 +10,8 @@
     <div class="container header-inner">
       <img src="../your-profile.jpeg" alt="Camilo Diaz" class="profile-pic">
       <div class="header-text">
-        <h1 class="site-name">Civil Engineer</h1>
-        <p class="professions">Cost estimation | Project coordination | AutoCAD | Revit</p>
+        <h1 class="site-name">Ingeniero Civil</h1>
+        <p class="professions">Estimación de costos | Coordinación de proyectos | AutoCAD | Revit | Microsoft Office | Microsoft Project | Control presupuestal | Gestión de la construcción | Cómputos métricos | Finanzas en construcción | Programación de proyectos </p>
       </div>
     </div>
   </header>
@@ -20,17 +20,27 @@
     <a href="index.html" class="btn" style="background:#007acc;color:#fff;border:none;margin-bottom:18px;display:inline-block">← Back</a>
 
     <section id="experience">
-      <h2>Professional Experience</h2>
-      <p><strong>With over 5 years of experience...</strong></p>
+      <h2>Experiencia profesional</h2>
+      <p>Con una sólida formación en ingeniería civil y varios años de experiencia práctica liderando proyectos de construcción complejos, he desarrollado una comprensión integral de los procesos técnicos, financieros y de gestión en todas las etapas del proyecto: desde la revisión de diseños y estimación de costos, hasta la ejecución en obra y entrega final.
+
+A lo largo de mi carrera, he coordinado equipos multidisciplinarios, optimizando recursos y asegurando que cada proyecto cumpla con altos estándares de calidad, seguridad y eficiencia.
+
+Mi experiencia incluye:</p>
       <ul>
-        <li>Coordination of design projects</li>
-        <li>Supervision on site</li>
-        <li>Cost estimation and scheduling</li>
+        <li>Gestioné más de 10 proyectos de gran escala en sectores como campus educativos, instalaciones aeronáuticas, edificaciones gubernamentales e infraestructura hospitalaria.</li> 
+        <li>Lideré la programación de proyectos y el análisis de ruta crítica utilizando Microsoft Project, garantizando entregas puntuales y dentro del presupuesto.</li> 
+        <li>Realicé análisis de costos detallados, estudios de precios unitarios y cómputos métricos para asegurar presupuestos precisos y competitivos.</li> 
+        <li>Supervisé las operaciones en obra, garantizando el control de calidad, el cumplimiento de normas de seguridad y construcción, y la ejecución en los tiempos previstos.</li> 
+        <li>Coordiné equipos multidisciplinarios para alinear los esfuerzos técnicos y administrativos con los objetivos del cliente.</li> 
+        <li>Revisé presupuestos de consultores y actas de pago, asegurando transparencia y precisión financiera.</li> 
+        <li>Mantuve una comunicación fluida en todas las etapas del proyecto, asistiendo a reuniones técnicas y brindando reportes regulares a directores y partes interesadas.</li> 
+        <li>Garanticé la continuidad operativa en obra mediante una gestión eficiente de la asignación de personal, la logística de materiales y los pagos a proveedores.</li>
+        
       </ul>
     </section>
 
     <section class="skills">
-      <h2>Tech Stack</h2>
+      <h2>Stack Tecnológico</h2>
       <div class="skills-logos">
         <div class="skill"><img src="../autocad.png" alt="AutoCAD"><p>AutoCAD</p></div>
         <div class="skill"><img src="../revit.png" alt="Revit"><p>Revit</p></div>
@@ -39,16 +49,44 @@
       </div>
     </section>
 
+
+    <section id="projects">
+  <h2 style="text-align:center; margin-top:60px;">Proyectos</h2>
+  <canvas id="projectsChart" width="600" height="300"></canvas>
+</section>
+     <!-- Chart Script -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('projectsChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Proyectos de diseño', 'Supervisión de proyectos en obra', 'Proyectos de construción'],
+      datasets: [{
+        label: 'Número de proyectos',
+        data: [15, 9, 12],
+        backgroundColor: ['#4a5568', '#718096', '#a0aec0'] // tonos sobrios
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: { x: { beginAtZero: true, max: 15 } }
+    }
+  });
+</script>
+
     <section class="connect">
-      <h2>Connect with Me</h2>
+      <h2>Conecta conmigo</h2>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/tu-linkedin" target="_blank"><img src="../linkedin.png" alt="LinkedIn"> LinkedIn</a>
-        <a href="mailto:tuemail@gmail.com"><img src="../email.png" alt="Email"> Email</a>
+        <a href="https://www.linkedin.com/in/camiloacdiaz" target="_blank"><img src="../linkedin.png" alt="LinkedIn"> LinkedIn</a>
+        <a href="mailto:camiloacdiaz07@gmail.com"><img src="../email.png" alt="Email"> Email</a>
         <a href="https://github.com/Camilo07Diaz" target="_blank"><img src="../github.png" alt="GitHub"> GitHub</a>
       </div>
 
       <div style="margin-top:18px">
-        <a href="../Civil_Engineer_Camilo_Diaz.pdf" target="_blank" class="btn" style="background:#222;color:#fff">Download CV</a>
+        <a href="hv/Civil_Engineer_Camilo_Diaz_eng.pdf" target="_blank" class="btn" style="background:#222;color:#fff">Descarga mi CV</a>
       </div>
     </section>
   </main>
